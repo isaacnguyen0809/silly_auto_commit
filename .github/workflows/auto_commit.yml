@@ -9,7 +9,7 @@ on:
 jobs:
     auto_commit:
       name: 'Auto push a commit to my repo'
-      runs-on: ubuntu-latest
+      runs-on: macos-latest
       steps:
       - uses: actions/checkout@v2
       - name: Create file with just timestamp
@@ -19,7 +19,7 @@ jobs:
             git config --global user.name 'Isaac'
             git config --global user.email 'isaacnguyen8998'
             git add data.txt
-            git commit -am "Automated changed"
+            git commit -m "Automated changed"
             git push
     
     
